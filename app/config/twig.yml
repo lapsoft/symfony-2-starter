@@ -1,0 +1,10 @@
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    form_themes:
+        - LexikFormFilterBundle:Form:form_div_layout.html.twig
+
+    form:
+        resources:
+            - 'SonataFormatterBundle:Form:formatter.html.twig'

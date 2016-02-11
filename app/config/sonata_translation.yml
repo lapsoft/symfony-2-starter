@@ -1,0 +1,8 @@
+sonata_translation:
+    locales: [en, pl]
+    default_locale: en
+    # here enable the types you need
+    gedmo:
+        enabled: true
+    #phpcr:
+    #    enabled: true

@@ -1,0 +1,19 @@
+sonata_core:
+    flashmessage:
+        success:
+            types:
+                - { type: my_custom_bundle_success, domain: AppBundle }
+
+        warning:
+            types:
+                - { type: my_custom_bundle_warning, domain: AppBundle }
+                - { type: my_other_bundle_warning } # if nothing is specified, sets SonataCoreBundle by default
+
+        error:
+            css_class: danger # optionally, a CSS class can be defined
+            types:
+                - { type: my_custom_bundle, domain: AppBundle }
+
+        custom_type: # You can add custom types too
+            types:
+                - { type: custom_bundle_type, domain: AppBundle }

@@ -1,0 +1,10 @@
+knp_doctrine_behaviors:
+    blameable:      true
+    translatable:   false
+    geocodable:     true
+    loggable:       true
+    sluggable:      true
+    soft_deletable: true
+    sortable:       true
+    timestampable:  true
+    # All others behaviors are disabled

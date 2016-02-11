@@ -1,5 +1,7 @@
-# Cache and logs (Symfony2)
+/web/bundles/
+/app/bootstrap.php.cache
 /app/cache/*
+/app/config/parameters.yml
 /app/logs/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
@@ -35,6 +37,8 @@
 
 # Build data
 /build/
-
-# Composer PHAR
+/vendor/
+/bin/
 /composer.phar
+/web/uploads/
+/web/css/

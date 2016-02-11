@@ -1,0 +1,29 @@
+sonata_admin:
+    title:      BeeErEm
+    title_logo: bundles/app/images/logo.png
+    templates:
+        layout:				 SonataAdminBundle::layout.html.twig
+        search:              SonataAdminBundle:Core:search.html.twig
+        search_result_block: SonataAdminBundle:Block:block_search_result.html.twig
+    security:
+        handler: sonata.admin.security.handler.role
+    dashboard:
+#        groups:
+#            app.admin.group.content:
+#                label: app.admin.group.content
+#                label_catalogue: AppBundle
+#                items:
+#                    - app.admin.apiary
+#                    - app.admin.category
+        blocks:
+            -
+                position: left
+                class: col-md-8
+                type: sonata.admin.block.admin_list
+                
+            -
+                position: right
+                type: sonata.block.service.text
+                settings:
+                    content: >
+                        <h2>Welcome to the Sonata Admin</h2>

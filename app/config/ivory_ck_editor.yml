@@ -1,0 +1,17 @@
+ivory_ck_editor:
+    configs:
+        default:
+            language:  '%locale%'
+            toolbar: standard
+        my_config:
+            toolbar:                [ [ "Source", "-", "Save" ], "/", [ "Anchor" ], "/", [ "Maximize" ] ]
+            uiColor:                "#000000"
+            extraPlugins:           wordcount
+        news:
+            toolbar:                standard
+            uiColor:                "#000000"
+#            extraPlugins:           wordcount
+    plugins:
+        wordcount:
+            path:     "/bundles/app/wordcount/"
+            filename: "plugin.js"
